@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const IP = "0.0.0.0";
 server.listen(PORT, IP, () => {
   console.log("Server sudah berjalan!");
